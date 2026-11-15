@@ -11,7 +11,7 @@
     justify-content: flex-end;
     padding: 2vh clamp(4%, 8vw, 12%) 2vh 4%;
     background: radial-gradient(circle at 30% 50%, #1c3150 0%, #070b14 85%);
-    background-image: url('/assets/bg_login.webp');
+    background-image: url('../../assets/bg_login.webp');
     background-size: cover;
     background-position: center;
 }

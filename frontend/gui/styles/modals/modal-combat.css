@@ -118,11 +118,11 @@
 }
 
 .combat-fighter-hud.fighter-left::after {
-    background: url('/assets/ui/hud-hero-left.webp') no-repeat center / 100% 100%;
+    background: url('../../assets/ui/hud-hero-left.webp') no-repeat center / 100% 100%;
 }
 
 .combat-fighter-hud.fighter-right::after {
-    background: url('/assets/ui/hud-enemy-right.webp') no-repeat center / 100% 100%;
+    background: url('../../assets/ui/hud-enemy-right.webp') no-repeat center / 100% 100%;
 }
 
 /* Avatars (separate ones for the Hero and the Enemy!) */
@@ -229,7 +229,7 @@
     gap: 4px;
     border: none !important;
     box-shadow: none !important;
-    background: transparent url('/assets/ui/hud-banner-sm.webp') no-repeat center / 100% 100% !important;
+    background: transparent url('../../assets/ui/hud-banner-sm.webp') no-repeat center / 100% 100% !important;
     filter: drop-shadow(0 6px 16px rgba(0, 0, 0, 0.92));
 }
 
@@ -366,7 +366,7 @@
     padding: 24px 36px;
     border: none !important;
     border-radius: 6px;
-    background: url('/assets/buttons/bg-base.png') no-repeat center / 100% 100% !important;
+    background: url('../../assets/buttons/bg-base.png') no-repeat center / 100% 100% !important;
     box-shadow: 0 12px 40px rgba(0, 0, 0, 0.95), 0 0 30px rgba(212, 163, 70, 0.45) !important;
     display: flex;
     flex-direction: column;
@@ -386,14 +386,14 @@
     z-index: 5;
 
     background-image:
-        url('/assets/ui/panel-corner-tl.png'),
-        url('/assets/ui/panel-corner-tr.png'),
-        url('/assets/ui/panel-corner-bl.png'),
-        url('/assets/ui/panel-corner-br.png'),
-        url('/assets/ui/slot-edge-h.png'),
-        url('/assets/ui/slot-edge-h.png'),
-        url('/assets/ui/slot-edge-v.png'),
-        url('/assets/ui/slot-edge-v.png');
+        url('../../assets/ui/panel-corner-tl.png'),
+        url('../../assets/ui/panel-corner-tr.png'),
+        url('../../assets/ui/panel-corner-bl.png'),
+        url('../../assets/ui/panel-corner-br.png'),
+        url('../../assets/ui/slot-edge-h.png'),
+        url('../../assets/ui/slot-edge-h.png'),
+        url('../../assets/ui/slot-edge-v.png'),
+        url('../../assets/ui/slot-edge-v.png');
 
     background-position:
         top left,

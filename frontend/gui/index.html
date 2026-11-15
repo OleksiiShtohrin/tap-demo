@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TAP — The Answer Protocol</title>
-    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
 
@@ -12,12 +12,12 @@
     <main id="login-screen" class="screen">
         <section class="login-container" aria-labelledby="game-title">
             <header class="logo-header">
-                <img src="/assets/ui/logo-tap.webp" alt="TAP — The Answer Protocol" class="login-logo-img">
+                <img src="assets/ui/logo-tap.webp" alt="TAP — The Answer Protocol" class="login-logo-img">
             </header>
 
             <form id="login-form" class="gold-panel login-box">
                 <button type="button" class="dock-ctrl-btn login-sound-btn js-sound-toggle" title="Mute / Unmute Audio">
-                    <img src="/assets/icons/ui/sound_on.webp" alt="Sound" class="sound-btn-ico">
+                    <img src="assets/icons/ui/sound_on.webp" alt="Sound" class="sound-btn-ico">
                 </button>
                 <h2>Connect to the World</h2>
                 <p class="login-hint">Enter your name and begin your adventure.</p>
@@ -26,7 +26,7 @@
                 <label class="form-field">
                     <span class="field-label">Character Name</span>
                     <span class="input-wrapper">
-                        <img src="/assets/icons/ui/player.webp" alt="" aria-hidden="true" class="input-icon-img">
+                        <img src="assets/icons/ui/player.webp" alt="" aria-hidden="true" class="input-icon-img">
                         <input type="text" id="login-username" name="username"
                                placeholder="Enter your character name..."
                                value="Arthas" required minlength="1" maxlength="12"
@@ -74,11 +74,11 @@
         <!-- TOP HUD BAR -->
         <header class="top-hud">
             <h1 class="hud-center">
-                <img src="/assets/ui/hud-crest-tap.png" alt="TAP — The Answer Protocol" class="hud-crest-img">
+                <img src="assets/ui/hud-crest-tap.png" alt="TAP — The Answer Protocol" class="hud-crest-img">
             </h1>
 
             <section class="hud-left gold-frame" aria-label="Character Status">
-                <img id="hud-avatar" class="avatar-circle" src="/assets/avatars/icons/hero_male.jpeg" alt="Player Avatar">
+                <img id="hud-avatar" class="avatar-circle" src="assets/avatars/icons/hero_male.jpeg" alt="Player Avatar">
                 <div class="bars-container">
                     <header class="char-title">
                         <h2 id="hud-player-name" style="font-size:15px;font-weight:bold;">Arthas</h2>
@@ -92,20 +92,20 @@
 
             <section class="hud-right gold-frame" role="region" aria-label="Room Information and Actions">
                 <div class="hud-location-info">
-                    <p><img src="/assets/icons/ui/room.webp" alt="" aria-hidden="true" class="hud-stat-icon"> Room: <data id="hud-room-count" value="1"><b>1</b></data></p>
-                    <p><img src="/assets/icons/ui/server.webp" alt="" aria-hidden="true" class="hud-stat-icon"> Server: <data id="hud-server-count" value="1"><b>1</b></data></p>
+                    <p><img src="assets/icons/ui/room.webp" alt="" aria-hidden="true" class="hud-stat-icon"> Room: <data id="hud-room-count" value="1"><b>1</b></data></p>
+                    <p><img src="assets/icons/ui/server.webp" alt="" aria-hidden="true" class="hud-stat-icon"> Server: <data id="hud-server-count" value="1"><b>1</b></data></p>
                 </div>
                 <div class="hud-top-icons" role="toolbar" aria-label="Quick System Actions">
                     <button type="button" class="icon-btn" data-cmd="WHO" title="Refresh WHO">
-                        <img src="/assets/icons/command/who.png" alt="" aria-hidden="true" class="cmd-icon-img">
+                        <img src="assets/icons/command/who.png" alt="" aria-hidden="true" class="cmd-icon-img">
                         <span class="act-label">WHO</span>
                     </button>
                     <button type="button" class="icon-btn" data-open-window="status" title="Character Status">
-                        <img src="/assets/icons/command/status.png" alt="" aria-hidden="true" class="cmd-icon-img">
+                        <img src="assets/icons/command/status.png" alt="" aria-hidden="true" class="cmd-icon-img">
                         <span class="act-label">STATUS</span>
                     </button>
                     <button type="button" class="icon-btn" data-open-window="quit" title="Leave Game">
-                        <img src="/assets/icons/command/quit.png" alt="" aria-hidden="true" class="cmd-icon-img">
+                        <img src="assets/icons/command/quit.png" alt="" aria-hidden="true" class="cmd-icon-img">
                         <span class="act-label">QUIT</span>
                     </button>
                 </div>
@@ -117,7 +117,7 @@
             
             <!-- WORLD VIEWPORT -->
             <section class="world-stage" id="world-stage" aria-label="World Viewport">
-                <img id="stage-bg-img" class="stage-bg-img" src="/assets/rooms/harbor_square.webp" alt="Central Harbor Square">
+                <img id="stage-bg-img" class="stage-bg-img" src="assets/rooms/harbor_square.webp" alt="Central Harbor Square">
 
                 <!-- Scene Panorama Overlay -->
                 <div class="stage-backdrop">
@@ -135,7 +135,7 @@
                 <dialog id="modal-look" class="rpg-modal gold-panel hidden" open>
                     <header class="modal-header">
                         <div class="modal-title-group">
-                            <img src="/assets/icons/command/look.png" alt="" class="modal-header-icon-img">
+                            <img src="assets/icons/command/look.png" alt="" class="modal-header-icon-img">
                             <div>
                                 <h2 class="modal-title">LOOK — Location</h2>
                                 <p class="modal-subtitle" id="look-sub-id">ID: harbor_square</p>
@@ -155,7 +155,7 @@
 
                     <div id="look-tab-desc" class="modal-split-body look-tab-panel">
                         <aside class="split-left-preview inner-gold-box flush-portrait">
-                            <img id="look-art-box" class="full-panel-img" src="/assets/rooms/cards/harbor_square.jpeg" alt="Location illustration">
+                            <img id="look-art-box" class="full-panel-img" src="assets/rooms/cards/harbor_square.jpeg" alt="Location illustration">
                         </aside>
                         <section class="split-right-list inner-gold-box">
                             <h3 class="preview-title" id="look-room-title">Central Harbor Square</h3>
@@ -168,7 +168,7 @@
                     <div id="look-tab-exits" class="modal-split-body look-tab-panel hidden">
                         <aside class="split-left-preview inner-gold-box">
                             <div class="preview-artwork tall">
-                                <img class="art-img cover" src="/assets/ui/card/look-exits.jpeg" alt="Compass and available exits">
+                                <img class="art-img cover" src="assets/ui/card/look-exits.jpeg" alt="Compass and available exits">
                             </div>
                             <h3 class="preview-title">Compass & Exits</h3>
                             <p class="preview-desc">Click any route on the right to travel immediately.</p>
@@ -182,7 +182,7 @@
                     <div id="look-tab-items" class="modal-split-body look-tab-panel hidden">
                         <aside class="split-left-preview inner-gold-box">
                             <div class="preview-artwork tall">
-                                <img class="art-img cover" src="/assets/ui/card/look-items.jpeg" alt="Items in location">
+                                <img class="art-img cover" src="assets/ui/card/look-items.jpeg" alt="Items in location">
                             </div>
                             <h3 class="preview-title">Items in Location</h3>
                             <p class="preview-desc">Objects discovered in this area.</p>
@@ -196,7 +196,7 @@
                     <div id="look-tab-npcs" class="modal-split-body look-tab-panel hidden">
                         <aside class="split-left-preview inner-gold-box">
                             <div class="preview-artwork tall">
-                                <img class="art-img cover" src="/assets/ui/card/look-npcs.jpeg" alt="Characters in location">
+                                <img class="art-img cover" src="assets/ui/card/look-npcs.jpeg" alt="Characters in location">
                             </div>
                             <h3 class="preview-title">Local Characters</h3>
                             <p class="preview-desc">Inhabitants and creatures currently in this room.</p>
@@ -210,7 +210,7 @@
                     <div id="look-tab-players" class="modal-split-body look-tab-panel hidden">
                         <aside class="split-left-preview inner-gold-box">
                             <div class="preview-artwork tall">
-                                <img class="art-img cover" src="/assets/ui/card/look-players.jpeg" alt="Adventurers in location">
+                                <img class="art-img cover" src="assets/ui/card/look-players.jpeg" alt="Adventurers in location">
                             </div>
                             <h3 class="preview-title">Fellow Adventurers</h3>
                             <p class="preview-desc">Connected players currently standing in this location.</p>
@@ -227,7 +227,7 @@
                     <header class="modal-header">
                         <div class="modal-title-group">
                             <span class="modal-header-icon" id="sel-header-icon">
-                                <img src="/assets/icons/command/move.png" alt="" class="modal-header-icon-img">
+                                <img src="assets/icons/command/move.png" alt="" class="modal-header-icon-img">
                             </span>
                             <div>
                                 <h2 class="modal-title" id="sel-header-title">MOVE — Travel</h2>
@@ -241,7 +241,7 @@
                     <div class="modal-split-body">
                         <aside class="split-left-preview inner-gold-box">
                             <div id="sel-preview-art" class="preview-artwork">
-                                <img class="art-img cover" src="/assets/rooms/cards/harbor_square.jpeg" alt="Selected option preview">
+                                <img class="art-img cover" src="assets/rooms/cards/harbor_square.jpeg" alt="Selected option preview">
                             </div>
                             <h3 class="preview-title" id="sel-preview-title">Select an Option</h3>
                             <p class="preview-desc" id="sel-preview-desc">Choose an entry on the right to inspect its details.</p>
@@ -263,7 +263,7 @@
                 <dialog id="modal-dialogue" class="rpg-modal gold-panel hidden" open>
                     <header class="modal-header">
                         <div class="modal-title-group">
-                            <img src="/assets/icons/command/talk.png" alt="" class="modal-header-icon-img">
+                            <img src="assets/icons/command/talk.png" alt="" class="modal-header-icon-img">
                             <div>
                                 <h2 class="modal-title" id="dlg-header-title">TALK — Character</h2>
                                 <p class="modal-subtitle" id="dlg-header-sub">Converse and learn about the world.</p>
@@ -275,7 +275,7 @@
 
                     <div class="modal-split-body">
                         <aside class="split-left-preview inner-gold-box flush-portrait">
-                            <img id="dlg-npc-art" class="full-panel-img" src="/assets/avatars/captain_eliza.jpeg" alt="NPC Portrait">
+                            <img id="dlg-npc-art" class="full-panel-img" src="assets/avatars/captain_eliza.jpeg" alt="NPC Portrait">
                         </aside>
 
                         <section class="split-right-list inner-gold-box" style="justify-content:space-between;">
@@ -291,19 +291,19 @@
                             <ul class="selectable-list" id="dlg-choices" style="flex:0 0 auto;margin-top:12px;">
                                 <li class="select-card" id="dlg-btn-talk-again">
                                     <div class="card-left">
-                                        <img src="/assets/icons/command/talk.png" alt="" class="inline-cmd-icon">
+                                        <img src="assets/icons/command/talk.png" alt="" class="inline-cmd-icon">
                                         <strong class="card-title" id="dlg-talk-btn-label">Speak with character (TALK)</strong>
                                     </div>
                                 </li>
                                 <li class="select-card" id="dlg-btn-quest">
                                     <div class="card-left">
-                                        <img src="/assets/icons/command/quest.png" alt="" class="inline-cmd-icon">
+                                        <img src="assets/icons/command/quest.png" alt="" class="inline-cmd-icon">
                                         <strong class="card-title" id="dlg-quest-btn-label">Ask for a Quest (QUEST)</strong>
                                     </div>
                                 </li>
                                 <li class="select-card" data-close-modals>
                                     <div class="card-left">
-                                        <img src="/assets/icons/command/quit.png" alt="" class="inline-cmd-icon">
+                                        <img src="assets/icons/command/quit.png" alt="" class="inline-cmd-icon">
                                         <strong class="card-title">Goodbye.</strong>
                                     </div>
                                 </li>
@@ -316,7 +316,7 @@
                 <dialog id="modal-inventory" class="rpg-modal gold-panel hidden" open>
                     <header class="modal-header">
                         <div class="modal-title-group">
-                            <img src="/assets/icons/command/inventory.png" alt="" class="modal-header-icon-img">
+                            <img src="assets/icons/command/inventory.png" alt="" class="modal-header-icon-img">
                             <div>
                                 <h2 class="modal-title">INVENTORY</h2>
                                 <p class="modal-subtitle">Your current items.</p>
@@ -331,7 +331,7 @@
 
                         <aside class="split-left-preview inner-gold-box">
                             <div id="inv-item-icon" class="preview-artwork">
-                                <img class="art-img cover" src="/assets/ui/card/look-items.jpeg" alt="Selected inventory item">
+                                <img class="art-img cover" src="assets/ui/card/look-items.jpeg" alt="Selected inventory item">
                             </div>
                             <h3 class="preview-title" id="inv-item-name">Select an Item</h3>
                             <ul class="stat-kv-list" id="inv-item-stats">
@@ -354,7 +354,7 @@
                 <dialog id="modal-status" class="rpg-modal gold-panel hidden" open>
                     <header class="modal-header">
                         <div class="modal-title-group">
-                            <img src="/assets/icons/command/status.png" alt="" class="modal-header-icon-img">
+                            <img src="assets/icons/command/status.png" alt="" class="modal-header-icon-img">
                             <div>
                                 <h2 class="modal-title">STATUS</h2>
                                 <p class="modal-subtitle">Character information, combat gear, and world standing.</p>
@@ -367,41 +367,41 @@
                     <div class="modal-split-body">
                         <!-- On the left: A character portrait filling the entire window, without any extra inner frame! -->
                         <aside class="split-left-preview inner-gold-box flush-portrait">
-                            <img id="status-hero-art" class="full-panel-img" src="/assets/avatars/hero_male.jpeg" alt="Character portrait">
+                            <img id="status-hero-art" class="full-panel-img" src="assets/avatars/hero_male.jpeg" alt="Character portrait">
                         </aside>
 
                         <!-- On the right: Name + description above the HP; below, 'Combat' and 'Miscellaneous' listed vertically, spanning the full width! -->
                         <section class="split-right-list inner-gold-box" style="gap:10px;">
                             <header class="status-hero-header">
                                 <h3 class="preview-title" id="status-char-name">Arthas</h3>
-                                <span class="modal-subtitle"><img src="/assets/icons/ui/shield.webp" alt="" class="ui-ico">Adventurer of Arvendale</span>
+                                <span class="modal-subtitle"><img src="assets/icons/ui/shield.webp" alt="" class="ui-ico">Adventurer of Arvendale</span>
                             </header>
 
                             <div class="stat-bar hp-bar">
                                 <div class="bar-fill" id="st-hp-fill" style="width:100%"></div>
-                                <span class="bar-text"><img src="/assets/icons/ui/heart.webp" alt="" class="ui-ico">Health (HP) &nbsp; <b id="st-hp-val">100 / 100</b></span>
+                                <span class="bar-text"><img src="assets/icons/ui/heart.webp" alt="" class="ui-ico">Health (HP) &nbsp; <b id="st-hp-val">100 / 100</b></span>
                             </div>
 
                             <div class="status-column-stack">
                                 <div class="inner-gold-box status-subbox">
-                                    <h4><img src="/assets/icons/command/attack.png" alt="" class="ui-ico">Combat Statistics (Base + Equipment)</h4>
+                                    <h4><img src="assets/icons/command/attack.png" alt="" class="ui-ico">Combat Statistics (Base + Equipment)</h4>
                                     <ul class="stat-kv-list">
-                                        <li><span><img src="/assets/icons/ui/sword.webp" alt="" class="ui-ico">Attack Power</span><strong id="st-atk-val">10</strong></li>
-                                        <li><span><img src="/assets/icons/ui/shield.webp" alt="" class="ui-ico">Defense Rating</span><strong id="st-def-val">5</strong></li>
-                                        <li><span><img src="/assets/icons/ui/speed.webp" alt="" class="ui-ico">Action Speed</span><strong id="st-spd-val">10</strong></li>
-                                        <li><span><img src="/assets/icons/ui/heart.webp" alt="" class="ui-ico">Condition</span><strong id="st-cond-val">healthy</strong></li>
+                                        <li><span><img src="assets/icons/ui/sword.webp" alt="" class="ui-ico">Attack Power</span><strong id="st-atk-val">10</strong></li>
+                                        <li><span><img src="assets/icons/ui/shield.webp" alt="" class="ui-ico">Defense Rating</span><strong id="st-def-val">5</strong></li>
+                                        <li><span><img src="assets/icons/ui/speed.webp" alt="" class="ui-ico">Action Speed</span><strong id="st-spd-val">10</strong></li>
+                                        <li><span><img src="assets/icons/ui/heart.webp" alt="" class="ui-ico">Condition</span><strong id="st-cond-val">healthy</strong></li>
                                     </ul>
                                 </div>
 
                                 <div class="inner-gold-box status-subbox">
-                                    <h4><img src="/assets/icons/command/quest.png" alt="" class="ui-ico">Miscellaneous & World Info</h4>
+                                    <h4><img src="assets/icons/command/quest.png" alt="" class="ui-ico">Miscellaneous & World Info</h4>
                                     <ul class="stat-kv-list">
-                                        <li><span><img src="/assets/icons/ui/location.webp" alt="" class="ui-ico">Current Location</span><strong id="st-loc-val">Central Harbor Square</strong></li>
-                                        <li><span><img src="/assets/icons/ui/shield.webp" alt="" class="ui-ico">Equipped Gear</span><strong id="st-gear-val">0 pieces</strong></li>
-                                        <li><span><img src="/assets/icons/command/inventory.png" alt="" class="ui-ico">Inventory Items</span><strong id="st-items-val">0</strong></li>
-                                        <li><span><img src="/assets/icons/command/quests.png" alt="" class="ui-ico">Quests Completed</span><strong id="st-quests-val">0</strong></li>
-                                        <li><span><img src="/assets/icons/ui/room.webp" alt="" class="ui-ico">Active Party</span><strong id="st-party-val">None</strong></li>
-                                        <li><span><img src="/assets/icons/ui/server.webp" alt="" class="ui-ico">Server Population</span><strong id="st-pop-val">1 online</strong></li>
+                                        <li><span><img src="assets/icons/ui/location.webp" alt="" class="ui-ico">Current Location</span><strong id="st-loc-val">Central Harbor Square</strong></li>
+                                        <li><span><img src="assets/icons/ui/shield.webp" alt="" class="ui-ico">Equipped Gear</span><strong id="st-gear-val">0 pieces</strong></li>
+                                        <li><span><img src="assets/icons/command/inventory.png" alt="" class="ui-ico">Inventory Items</span><strong id="st-items-val">0</strong></li>
+                                        <li><span><img src="assets/icons/command/quests.png" alt="" class="ui-ico">Quests Completed</span><strong id="st-quests-val">0</strong></li>
+                                        <li><span><img src="assets/icons/ui/room.webp" alt="" class="ui-ico">Active Party</span><strong id="st-party-val">None</strong></li>
+                                        <li><span><img src="assets/icons/ui/server.webp" alt="" class="ui-ico">Server Population</span><strong id="st-pop-val">1 online</strong></li>
                                     </ul>
                                 </div>
                             </div>
@@ -413,7 +413,7 @@
                 <dialog id="modal-quests" class="rpg-modal gold-panel hidden" open>
                     <header class="modal-header">
                         <div class="modal-title-group">
-                            <img src="/assets/icons/command/quests.png" alt="" class="modal-header-icon-img">
+                            <img src="assets/icons/command/quests.png" alt="" class="modal-header-icon-img">
                             <div>
                                 <h2 class="modal-title">QUESTS</h2>
                                 <p class="modal-subtitle">Track your adventures and objectives.</p>
@@ -440,14 +440,14 @@
                             <h3 class="preview-title" id="quest-detail-title">Select a Quest</h3>
                             <p class="modal-subtitle" id="quest-detail-giver">Kingdom of Arvendale</p>
                             <hr class="sapphire-divider" style="margin:10px 0;">
-                            <h4 style="color:var(--gold-light);font-size:14px;margin-bottom:6px;"><img src="/assets/icons/command/quests.png" alt="" class="ui-ico">Description</h4>
+                            <h4 style="color:var(--gold-light);font-size:14px;margin-bottom:6px;"><img src="assets/icons/command/quests.png" alt="" class="ui-ico">Description</h4>
                             <p class="preview-desc" id="quest-detail-desc">
                                 Speak with NPCs in the world using the QUEST command to discover tasks and earn rewards.
                             </p>
-                            <h4 style="color:var(--gold-light);font-size:14px;margin:10px 0 6px;"><img src="/assets/icons/ui/target.webp" alt="" class="ui-ico">Objectives</h4>
-                            <p class="preview-desc" id="quest-detail-obj"><img src="/assets/icons/ui/checkmark.png" alt="" class="ui-ico">Explore the Kingdom of Arvendale</p>
-                            <h4 style="color:var(--gold-light);font-size:14px;margin:10px 0 6px;"><img src="/assets/icons/ui/reward.webp" alt="" class="ui-ico">Rewards</h4>
-                            <p class="preview-desc" id="quest-detail-rew"><img src="/assets/icons/ui/sparkles.webp" alt="" class="ui-ico">Armor Gear & Healing Consumables</p>
+                            <h4 style="color:var(--gold-light);font-size:14px;margin:10px 0 6px;"><img src="assets/icons/ui/target.webp" alt="" class="ui-ico">Objectives</h4>
+                            <p class="preview-desc" id="quest-detail-obj"><img src="assets/icons/ui/checkmark.png" alt="" class="ui-ico">Explore the Kingdom of Arvendale</p>
+                            <h4 style="color:var(--gold-light);font-size:14px;margin:10px 0 6px;"><img src="assets/icons/ui/reward.webp" alt="" class="ui-ico">Rewards</h4>
+                            <p class="preview-desc" id="quest-detail-rew"><img src="assets/icons/ui/sparkles.webp" alt="" class="ui-ico">Armor Gear & Healing Consumables</p>
                         </aside>
                     </div>
                 </dialog>
@@ -456,7 +456,7 @@
                 <dialog id="modal-group" class="rpg-modal gold-panel hidden" open>
                     <header class="modal-header">
                         <div class="modal-title-group">
-                            <img src="/assets/icons/command/group.png" alt="" class="modal-header-icon-img">
+                            <img src="assets/icons/command/group.png" alt="" class="modal-header-icon-img">
                             <div>
                                 <h2 class="modal-title">GROUP</h2>
                                 <p class="modal-subtitle">Create your own group or join another player's party.</p>
@@ -469,7 +469,7 @@
                     <div class="modal-split-body">
                         <aside class="split-left-preview inner-gold-box">
                             <div class="preview-artwork tall">
-                                <img class="art-img cover" src="/assets/ui/card/group-img.jpeg" alt="Party and Co-op">
+                                <img class="art-img cover" src="assets/ui/card/group-img.jpeg" alt="Party and Co-op">
                             </div>
                             <h3 class="preview-title">Party & Co-op</h3>
                             <p class="preview-desc">Form a party with other adventurers to coordinate via Group Chat and explore dungeons together.</p>
@@ -478,7 +478,7 @@
                         <section class="split-right-list inner-gold-box" style="gap:12px;">
                             <div class="group-form-block">
                                 <h4 class="group-sec-title">
-                                    <img src="/assets/icons/ui/crown.webp" alt="" class="sec-title-icon"> Create or Join Group
+                                    <img src="assets/icons/ui/crown.webp" alt="" class="sec-title-icon"> Create or Join Group
                                 </h4>
                                 <input type="text" id="group-name-input" placeholder="Group name (e.g. Heroes)..." value="Arvendale_Watch">
                                 <div class="group-btn-grid-3">
@@ -492,7 +492,7 @@
 
                             <div class="group-form-block">
                                 <h4 class="group-sec-title">
-                                    <img src="/assets/icons/ui/invite.png" alt="" class="sec-title-icon"> Invite Player to Group
+                                    <img src="assets/icons/ui/invite.png" alt="" class="sec-title-icon"> Invite Player to Group
                                 </h4>
                                 <input type="text" id="group-modal-input" placeholder="Enter player username...">
                                 <div class="group-btn-grid-2">
@@ -508,7 +508,7 @@
 
                 <!-- ==================== 8. QUIT CONFIRMATION WINDOW ==================== -->
                 <dialog id="modal-quit" class="rpg-modal modal-sm modal-quit gold-panel hidden" open>
-                    <img class="quit-crest-badge" src="/assets/ui/quit-crest.png" alt="">
+                    <img class="quit-crest-badge" src="assets/ui/quit-crest.png" alt="">
 
                     <button type="button" class="close-btn quit-close-btn" data-close-modals aria-label="Close">✕</button>
 
@@ -532,11 +532,11 @@
                 <!-- ==================== 9. FULLSCREEN COMBAT ARENA ==================== -->
                 <dialog id="modal-combat" class="combat-arena gold-panel hidden" open>
                     <div class="combat-scene" id="combat-scene-bg">
-                        <img id="combat-bg-img" class="stage-bg-img" src="/assets/rooms/harbor_square.webp" alt="Combat Arena">
+                        <img id="combat-bg-img" class="stage-bg-img" src="assets/rooms/harbor_square.webp" alt="Combat Arena">
 
                         <header class="combat-top-bar">
                             <div class="combat-fighter-hud fighter-left gold-frame">
-                                <img class="combat-Hud-avatar" id="combat-hero-avatar" src="/assets/avatars/icons/hero_male.jpeg" alt="Hero Avatar">
+                                <img class="combat-Hud-avatar" id="combat-hero-avatar" src="assets/avatars/icons/hero_male.jpeg" alt="Hero Avatar">
                                 <div class="combat-hud-bars">
                                     <div class="combat-fighter-name">
                                         <strong id="combat-hero-name">Arthas</strong>
@@ -554,7 +554,7 @@
                                     <strong id="combat-turn-text">YOUR TURN</strong>
                                 </div>
                                 <div class="turn-sub-row">
-                                    <img src="/assets/icons/ui/hourglass.webp" alt="" class="ui-ico">
+                                    <img src="assets/icons/ui/hourglass.webp" alt="" class="ui-ico">
                                     <span id="combat-round-label">Round 1</span>
                                     <span class="turn-sep"> - </span>
                                     <span id="combat-timer-label">30s</span>
@@ -571,26 +571,26 @@
                                         <span class="bar-text"><b id="combat-enemy-hp-text">45 / 45</b></span>
                                     </div>
                                 </div>
-                                <img class="combat-Hud-avatar" id="combat-enemy-avatar" src="/assets/avatars/icons/dire_wolf.jpeg" alt="Enemy Avatar">
+                                <img class="combat-Hud-avatar" id="combat-enemy-avatar" src="assets/avatars/icons/dire_wolf.jpeg" alt="Enemy Avatar">
                             </div>
                         </header>
 
                         <div class="combat-stage-fighters">
                             <div class="fighter-spot spot-hero" id="fighter-hero-box">
                                 <div class="floating-dmg hidden" id="dmg-on-hero">-10</div>
-                                <img id="combat-hero-sprite" class="fighter-sprite" src="/assets/combat/hero_male.webp" alt="Hero"
+                                <img id="combat-hero-sprite" class="fighter-sprite" src="assets/combat/hero_male.webp" alt="Hero"
                                      onerror="this.style.display='none'; document.getElementById('combat-hero-fallback').style.display='block';">
                                 <span id="combat-hero-fallback" class="fighter-fallback">🧙‍♂️</span>
                             </div>
 
                             <div id="combat-outcome-banner" class="combat-outcome hidden">
-                                <h2 id="combat-outcome-title"><img src="/assets/icons/ui/trophy.webp" alt="" class="ui-ico-lg">VICTORY!</h2>
+                                <h2 id="combat-outcome-title"><img src="assets/icons/ui/trophy.webp" alt="" class="ui-ico-lg">VICTORY!</h2>
                                 <p id="combat-outcome-sub">Enemy defeated!</p>
                             </div>
 
                             <div class="fighter-spot spot-enemy" id="fighter-enemy-box">
                                 <div class="floating-dmg hidden" id="dmg-on-enemy">-12</div>
-                                <img id="combat-enemy-sprite" class="fighter-sprite" src="/assets/combat/dire_wolf.webp" alt="Enemy"
+                                <img id="combat-enemy-sprite" class="fighter-sprite" src="assets/combat/dire_wolf.webp" alt="Enemy"
                                      onerror="this.style.display='none'; document.getElementById('combat-enemy-fallback').style.display='block';">
                                 <span id="combat-enemy-fallback" class="fighter-fallback">🐺</span>
                             </div>
@@ -598,19 +598,19 @@
 
                         <footer class="combat-action-bar">
                             <button type="button" class="btn-modal-primary combat-act-btn" id="btn-combat-strike">
-                                <img src="/assets/icons/ui/sword.webp" alt="" class="ui-ico">Attack
+                                <img src="assets/icons/ui/sword.webp" alt="" class="ui-ico">Attack
                             </button>
                             <button type="button" class="btn-modal-secondary combat-act-btn" id="btn-combat-defend">
-                                <img src="/assets/icons/ui/shield.webp" alt="" class="ui-ico">Defend
+                                <img src="assets/icons/ui/shield.webp" alt="" class="ui-ico">Defend
                             </button>
                             <button type="button" class="btn-modal-secondary combat-act-btn" id="btn-combat-heal">
-                                <img src="/assets/icons/ui/potion.webp" alt="" class="ui-ico">Heal
+                                <img src="assets/icons/ui/potion.webp" alt="" class="ui-ico">Heal
                             </button>
                             <button type="button" class="btn-modal-secondary combat-act-btn" id="btn-combat-help">
-                                <img src="/assets/icons/ui/horn.webp" alt="" class="ui-ico">Help
+                                <img src="assets/icons/ui/horn.webp" alt="" class="ui-ico">Help
                             </button>
                             <button type="button" class="btn-modal-danger combat-act-btn" id="btn-combat-flee">
-                                <img src="/assets/icons/ui/flee.webp" alt="" class="ui-ico">Flee
+                                <img src="assets/icons/ui/flee.webp" alt="" class="ui-ico">Flee
                             </button>
                         </footer>
 
@@ -619,7 +619,7 @@
 
                 <!-- ==================== 10. FLEE CONFIRMATION MODAL (No <figure>!) ==================== -->
                 <dialog id="modal-flee" class="rpg-modal modal-sm modal-quit gold-panel hidden" open style="z-index: 55;">
-                    <img class="quit-crest-badge" src="/assets/ui/fled-crest.png" alt="">
+                    <img class="quit-crest-badge" src="assets/ui/fled-crest.png" alt="">
 
                     <button type="button" class="close-btn quit-close-btn" id="btn-close-flee" aria-label="Close">✕</button>
 
@@ -635,7 +635,7 @@
                     </div>
 
                     <footer class="modal-footer quit-footer">
-                        <button type="button" class="btn-modal-danger" id="btn-confirm-flee"><img src="/assets/icons/ui/flee.webp" alt="" class="ui-ico">Flee</button>
+                        <button type="button" class="btn-modal-danger" id="btn-confirm-flee"><img src="assets/icons/ui/flee.webp" alt="" class="ui-ico">Flee</button>
                         <button type="button" class="btn-modal-secondary" id="btn-cancel-flee">Cancel</button>
                     </footer>
                 </dialog>
@@ -645,35 +645,35 @@
             <aside class="right-action-bar gold-frame" aria-label="Protocol Commands">
                 <div class="right-menu-scroll">
                     <button type="button" class="action-btn" data-open-window="look" title="LOOK">
-                        <img src="/assets/icons/command/look.png" alt="" class="cmd-icon-img">
+                        <img src="assets/icons/command/look.png" alt="" class="cmd-icon-img">
                         <span class="act-label">LOOK</span>
                     </button>
                     <button type="button" class="action-btn" data-open-window="move" title="MOVE">
-                        <img src="/assets/icons/command/move.png" alt="" class="cmd-icon-img">
+                        <img src="assets/icons/command/move.png" alt="" class="cmd-icon-img">
                         <span class="act-label">MOVE</span>
                     </button>
                     <button type="button" class="action-btn" data-open-window="talk" title="TALK">
-                        <img src="/assets/icons/command/talk.png" alt="" class="cmd-icon-img">
+                        <img src="assets/icons/command/talk.png" alt="" class="cmd-icon-img">
                         <span class="act-label">TALK</span>
                     </button>
                     <button type="button" class="action-btn" data-open-window="take" title="TAKE">
-                        <img src="/assets/icons/command/take.png" alt="" class="cmd-icon-img">
+                        <img src="assets/icons/command/take.png" alt="" class="cmd-icon-img">
                         <span class="act-label">TAKE</span>
                     </button>
                     <button type="button" class="action-btn" data-open-window="attack" title="ATTACK">
-                        <img src="/assets/icons/command/attack.png" alt="" class="cmd-icon-img">
+                        <img src="assets/icons/command/attack.png" alt="" class="cmd-icon-img">
                         <span class="act-label">ATTACK</span>
                     </button>
                     <button type="button" class="action-btn" data-open-window="inventory" title="INVENTORY & DROP">
-                        <img src="/assets/icons/command/inventory.png" alt="" class="cmd-icon-img">
+                        <img src="assets/icons/command/inventory.png" alt="" class="cmd-icon-img">
                         <span class="act-label">INVENTORY</span>
                     </button>
                     <button type="button" class="action-btn" data-open-window="quests" title="QUESTS">
-                        <img src="/assets/icons/command/quests.png" alt="" class="cmd-icon-img">
+                        <img src="assets/icons/command/quests.png" alt="" class="cmd-icon-img">
                         <span class="act-label">QUESTS</span>
                     </button>
                     <button type="button" class="action-btn" data-open-window="group" title="GROUP">
-                        <img src="/assets/icons/command/group.png" alt="" class="cmd-icon-img">
+                        <img src="assets/icons/command/group.png" alt="" class="cmd-icon-img">
                         <span class="act-label">GROUP</span>
                     </button>
                 </div>
@@ -690,7 +690,7 @@
                     <button type="button" class="chat-tab" data-chat-scope="GLOBAL">World</button>
                     <button type="button" class="chat-tab" data-chat-scope="GROUP">Party</button>
                     <button type="button" class="chat-tab system-tab" data-chat-scope="LOG">
-                        <img src="/assets/icons/command/system-log.png" alt="" class="tab-mini-icon"> System
+                        <img src="assets/icons/command/system-log.png" alt="" class="tab-mini-icon"> System
                     </button>
 
                     <!-- Chat height and collapse controls -->
@@ -715,7 +715,7 @@
                     <button type="button" class="stage-pin comp-pin pin-north hidden" id="comp-btn-north"></button>
                     <button type="button" class="stage-pin comp-pin pin-west hidden" id="comp-btn-west"></button>
                     <div class="compass-rose-emblem">
-                        <img src="/assets/ui/compass-cross.webp" alt="Compass" onerror="this.style.display='none';this.nextElementSibling.style.display='block';">
+                        <img src="assets/ui/compass-cross.webp" alt="Compass" onerror="this.style.display='none';this.nextElementSibling.style.display='block';">
                         <span class="compass-plus-fallback" style="display:none;">✦</span>
                     </div>
                     <button type="button" class="stage-pin comp-pin pin-east hidden" id="comp-btn-east"></button>
@@ -737,10 +737,10 @@
                     <!-- Sound Toggle + Next Track + Player panel collapse/expand button -->
                     <div class="dock-window-controls">
                         <button type="button" class="dock-ctrl-btn js-sound-toggle" title="Mute / Unmute Audio">
-                            <img src="/assets/icons/ui/sound_on.webp" alt="Sound" class="sound-btn-ico">
+                            <img src="assets/icons/ui/sound_on.webp" alt="Sound" class="sound-btn-ico">
                         </button>
                         <button type="button" class="dock-ctrl-btn" id="btn-next-track" title="Next Music Track">
-                            <img src="/assets/icons/ui/next.png" alt="Next Track" class="sound-btn-ico">
+                            <img src="assets/icons/ui/next.png" alt="Next Track" class="sound-btn-ico">
                         </button>
                         <button type="button" class="dock-ctrl-btn" id="btn-players-collapse" title="Minimize / Restore Players Panel">▾</button>
                     </div>
@@ -779,29 +779,30 @@
     </div>
 
     <!-- 1. Core -->
-    <script src="/src/core/assets.js"></script>
-    <script src="/src/core/state.js"></script>
-    <script src="/src/core/audio.js"></script>
-    <script src="/src/core/network.js"></script>
+    <script src="src/core/demoBridge.js"></script>
+    <script src="src/core/assets.js"></script>
+    <script src="src/core/state.js"></script>
+    <script src="src/core/audio.js"></script>
+    <script src="src/core/network.js"></script>
 
     <!-- 3. Persistent HUD & Dock Views -->
-    <script src="/src/hud/topHudView.js"></script>
-    <script src="/src/hud/chatView.js"></script>
-    <script src="/src/hud/playersDockView.js"></script>
-    <script src="/src/hud/stageView.js"></script>
+    <script src="src/hud/topHudView.js"></script>
+    <script src="src/hud/chatView.js"></script>
+    <script src="src/hud/playersDockView.js"></script>
+    <script src="src/hud/stageView.js"></script>
 
     <!-- 4. Individual Modal Controllers -->
-    <script src="/src/modals/lookModal.js"></script>
-    <script src="/src/modals/selectorModal.js"></script>
-    <script src="/src/modals/dialogueModal.js"></script>
-    <script src="/src/modals/inventoryModal.js"></script>
-    <script src="/src/modals/statusModal.js"></script>
-    <script src="/src/modals/questsModal.js"></script>
-    <script src="/src/modals/groupModal.js"></script>
-    <script src="/src/modals/combatAnimator.js"></script>
-    <script src="/src/modals/combatModal.js"></script>
+    <script src="src/modals/lookModal.js"></script>
+    <script src="src/modals/selectorModal.js"></script>
+    <script src="src/modals/dialogueModal.js"></script>
+    <script src="src/modals/inventoryModal.js"></script>
+    <script src="src/modals/statusModal.js"></script>
+    <script src="src/modals/questsModal.js"></script>
+    <script src="src/modals/groupModal.js"></script>
+    <script src="src/modals/combatAnimator.js"></script>
+    <script src="src/modals/combatModal.js"></script>
 
     <!-- 5. Master UI Orchestrator -->
-    <script src="/src/ui.js"></script>
+    <script src="src/ui.js"></script>
 </body>
 </html>

@@ -68,15 +68,15 @@
     pointer-events: none;
 
     background-image:
-        url("/assets/ui/gem-ornament.png"),
-        url("/assets/frame/frame-corner-top.png"),
-        url("/assets/frame/frame-corner-top-right.png"),
-        url("/assets/frame/frame-corner-bottom.png"),
-        url("/assets/frame/frame-corner-bottom-right.png"),
-        url("/assets/frame/frame-border-top.png"),
-        url("/assets/frame/frame-border-bottom.png"),
-        url("/assets/frame/frame-border-left.png"),
-        url("/assets/frame/frame-border-right.png");
+        url("../../assets/ui/gem-ornament.png"),
+        url("../../assets/frame/frame-corner-top.png"),
+        url("../../assets/frame/frame-corner-top-right.png"),
+        url("../../assets/frame/frame-corner-bottom.png"),
+        url("../../assets/frame/frame-corner-bottom-right.png"),
+        url("../../assets/frame/frame-border-top.png"),
+        url("../../assets/frame/frame-border-bottom.png"),
+        url("../../assets/frame/frame-border-left.png"),
+        url("../../assets/frame/frame-border-right.png");
 
     background-position:
         bottom center,

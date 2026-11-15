@@ -26,10 +26,10 @@
     z-index: 20;
 
     background-image:
-        url('/assets/ui/menu-top.png'),
-        url('/assets/ui/menu-bottom.png'),
-        url('/assets/ui/slot-edge-v.png'),
-        url('/assets/ui/slot-edge-v.png');
+        url('../../assets/ui/menu-top.png'),
+        url('../../assets/ui/menu-bottom.png'),
+        url('../../assets/ui/slot-edge-v.png'),
+        url('../../assets/ui/slot-edge-v.png');
 
     background-position:
         top center,

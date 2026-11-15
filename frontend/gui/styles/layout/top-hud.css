@@ -59,7 +59,7 @@
     content: "";
     position: absolute;
     inset: 0;
-    background: url('/assets/ui/hud-hero-left.webp') no-repeat center / 100% 100%;
+    background: url('../../assets/ui/hud-hero-left.webp') no-repeat center / 100% 100%;
     z-index: 10;
     pointer-events: none;
 }
@@ -142,7 +142,7 @@
     gap: 12px;
     border: none !important;
     box-shadow: none !important;
-    background: transparent url('/assets/ui/hud-banner-wide.webp') no-repeat center / 100% 100% !important;
+    background: transparent url('../../assets/ui/hud-banner-wide.webp') no-repeat center / 100% 100% !important;
 }
 
 .hud-location-info {

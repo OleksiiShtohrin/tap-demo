@@ -128,7 +128,7 @@ const CombatModal = {
         if (this.isFallen) {
             this.isMyTurn = false;
             const owner = this.activeTurnOwner || 'ALLY';
-            turnEl.innerHTML = `<img src="/assets/icons/ui/skull.webp" alt="" class="ui-ico">SPECTATING (${owner.toUpperCase()})`;
+            turnEl.innerHTML = `<img src="assets/icons/ui/skull.webp" alt="" class="ui-ico">SPECTATING (${owner.toUpperCase()})`;
             return;
         }
 
@@ -336,7 +336,7 @@ const CombatModal = {
         heroSprite.style.display = 'block';
         heroFallback.style.display = 'none';
         heroSprite.src = (ASSETS.combat && ASSETS.combat.heroes && ASSETS.combat.heroes[GameState.gender])
-            || `/assets/combat/hero_${GameState.gender}.webp`;
+            || `assets/combat/hero_${GameState.gender}.webp`;
 
         const enemySprite = document.getElementById('combat-enemy-sprite');
         const enemyFallback = document.getElementById('combat-enemy-fallback');
@@ -344,7 +344,7 @@ const CombatModal = {
         enemySprite.style.display = 'block';
         enemyFallback.style.display = 'none';
         enemySprite.src = (ASSETS.combat && ASSETS.combat.enemies && ASSETS.combat.enemies[this.enemyId])
-            || `/assets/combat/${this.enemyId}.webp`;
+            || `assets/combat/${this.enemyId}.webp`;
 
         document.getElementById('combat-outcome-banner').classList.add('hidden');
         document.getElementById('fighter-enemy-box').style.opacity = '1';
@@ -381,7 +381,7 @@ const CombatModal = {
                 CombatAnimator.triggerAction('hero', 'defend');
             }
             const turnText = document.getElementById('combat-turn-text');
-            if (turnText) turnText.innerHTML = `DEFENDING <img src="/assets/icons/ui/shield.webp" alt="" class="ui-ico">`;
+            if (turnText) turnText.innerHTML = `DEFENDING <img src="assets/icons/ui/shield.webp" alt="" class="ui-ico">`;
             this.showFloatingDmg('dmg-on-hero', `+${reductionPct}% DEF`, '#63b3ed');
         }, timing.totalMs);
     },
@@ -427,7 +427,7 @@ const CombatModal = {
             if (isHeroAttacking) {
                 if (turnText) {
                     const label = (customBannerText || 'STRIKE').replace('⚔️', '').trim();
-                    turnText.innerHTML = `${label} <img src="/assets/icons/ui/sword.webp" alt="" class="ui-ico">`;
+                    turnText.innerHTML = `${label} <img src="assets/icons/ui/sword.webp" alt="" class="ui-ico">`;
                 }
                 if (!timing.hasFrames) {
                     this.triggerAnim(heroBox, 'lunge-right');
@@ -604,8 +604,8 @@ const CombatModal = {
             this.setButtonsDisabled(true);
             const banner = document.getElementById('combat-outcome-banner');
             document.getElementById('combat-outcome-title').innerHTML = victory
-                ? `<img src="/assets/icons/ui/trophy.webp" alt="" class="ui-ico-lg">VICTORY!`
-                : `<img src="/assets/icons/ui/skull.webp" alt="" class="ui-ico-lg">DEFEATED`;
+                ? `<img src="assets/icons/ui/trophy.webp" alt="" class="ui-ico-lg">VICTORY!`
+                : `<img src="assets/icons/ui/skull.webp" alt="" class="ui-ico-lg">DEFEATED`;
             document.getElementById('combat-outcome-sub').textContent = subtitle;
             banner.classList.remove('hidden');
 

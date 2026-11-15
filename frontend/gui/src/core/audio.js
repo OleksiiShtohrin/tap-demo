@@ -8,12 +8,12 @@ const AudioManager = {
     inCombatMusic: false,
 
     worldPlaylist: [
-        '/assets/audio/music/arvendale_0.mp3',
-        '/assets/audio/music/arvendale_1.mp3',
-        '/assets/audio/music/arvendale_3.mp3',
-        '/assets/audio/music/arvendale_4.mp3'
+        'assets/audio/music/arvendale_0.mp3',
+        'assets/audio/music/arvendale_1.mp3',
+        'assets/audio/music/arvendale_3.mp3',
+        'assets/audio/music/arvendale_4.mp3'
     ],
-    combatTrackUrl: '/assets/audio/music/arvendale_combat.mp3',
+    combatTrackUrl: 'assets/audio/music/arvendale_combat.mp3',
 
     currentTrackIndex: 0,
     worldAudio: new Audio(),
@@ -128,8 +128,8 @@ const AudioManager = {
 
     syncMuteUI() {
         const iconPath = this.muted
-            ? '/assets/icons/ui/sound_off.webp'
-            : '/assets/icons/ui/sound_on.webp';
+            ? 'assets/icons/ui/sound_off.webp'
+            : 'assets/icons/ui/sound_on.webp';
         const titleText = this.muted ? 'Unmute Audio' : 'Mute Audio';
 
         document.querySelectorAll('.js-sound-toggle').forEach(btn => {
@@ -143,7 +143,7 @@ const AudioManager = {
     // Ready for your future Combat SFX (e.g. AudioManager.playSfx('hit'))!
     playSfx(name, volume = 0.6) {
         if (this.muted) return;
-        const sfx = new Audio(`/assets/audio/sfx/${name}.mp3`);
+        const sfx = new Audio(`assets/audio/sfx/${name}.mp3`);
         sfx.volume = volume;
         sfx.play().catch(() => {});
     }

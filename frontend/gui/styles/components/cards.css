@@ -30,7 +30,7 @@
     z-index: 1;
 
     background-color: transparent !important;
-    background-image: url('/assets/buttons/bg-base.png') !important;
+    background-image: url('../../assets/buttons/bg-base.png') !important;
     background-repeat: no-repeat !important;
     background-position: center center !important;
     background-size: 100% 100% !important;
@@ -43,7 +43,7 @@
     content: "";
     position: absolute;
     inset: 0;
-    background-image: url('/assets/buttons/bg-gold.png');
+    background-image: url('../../assets/buttons/bg-gold.png');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 100% 100%;
@@ -55,7 +55,7 @@
 
 /* Selected card uses blue background directly — prevents yellow flash when deselecting! */
 .select-card.selected {
-    background-image: url('/assets/buttons/bg-blue.png') !important;
+    background-image: url('../../assets/buttons/bg-blue.png') !important;
     box-shadow: 0 0 14px rgba(30, 98, 208, 0.55);
     filter: brightness(1.08);
 }
@@ -129,7 +129,7 @@
 .select-card.selected .check-circle {
     border: none;
     background-color: transparent;
-    background-image: url('/assets/icons/ui/checkmark.png');
+    background-image: url('../../assets/icons/ui/checkmark.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;

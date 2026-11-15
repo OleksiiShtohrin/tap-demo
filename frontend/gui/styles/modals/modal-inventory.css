@@ -15,7 +15,7 @@
 .inv-slot {
     aspect-ratio: 1 / 1; /* Гарантує ідеальний квадрат за будь-якої висоти вікна! */
     width: 100%;
-    background-image: url('/assets/buttons/bg-sq-base.png') !important;
+    background-image: url('../../assets/buttons/bg-sq-base.png') !important;
     background-size: cover !important;
     border-radius: 4px;
     display: flex;
@@ -29,7 +29,7 @@
 
 .inv-slot:hover,
 .inv-slot.selected {
-    background-image: url('/assets/buttons/bg-sq-gold.png') !important;
+    background-image: url('../../assets/buttons/bg-sq-gold.png') !important;
     box-shadow: 0 0 12px rgba(212, 163, 70, 0.5);
 }
 

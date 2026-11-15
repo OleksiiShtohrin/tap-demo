@@ -36,8 +36,8 @@ const StageView = {
                 const m = GameState.getNpcMeta(npcId);
                 const isHostile = !!m.hostile;
                 const actionIcon = isHostile
-                    ? `/assets/icons/command/attack.png`
-                    : `/assets/icons/command/talk.png`;
+                    ? `assets/icons/command/attack.png`
+                    : `assets/icons/command/talk.png`;
                 const actionLabel = isHostile ? 'ATTACK' : 'TALK';
 
                 const btn = document.createElement('button');

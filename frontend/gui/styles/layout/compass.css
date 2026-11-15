@@ -78,7 +78,7 @@
     height: 58px !important;
     padding: 4px 2px !important;
     margin: 0 !important;
-    background-image: url('/assets/buttons/bg-sq-base.png') !important;
+    background-image: url('../../assets/buttons/bg-sq-base.png') !important;
     background-size: 100% 100% !important;
     border-radius: 3px;
     display: flex;
@@ -97,7 +97,7 @@
     content: "";
     position: absolute;
     inset: 0;
-    background-image: url('/assets/buttons/bg-sq-gold.png');
+    background-image: url('../../assets/buttons/bg-sq-gold.png');
     background-size: 100% 100%;
     opacity: 0;
     transition: opacity 0.22s ease;

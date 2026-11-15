@@ -9,8 +9,8 @@
     border: none;
     background-color: transparent;
     background-image:
-        url('/assets/ui/line-sapphire.png'),
-        url('/assets/ui/line-gold.png');
+        url('../../assets/ui/line-sapphire.png'),
+        url('../../assets/ui/line-gold.png');
     background-repeat: no-repeat, no-repeat;
     background-position: center center, center 5px;
     background-size:

@@ -52,7 +52,7 @@ const QuestsModal = {
             li.className = 'select-card' + (idx === 0 ? ' selected' : '');
             li.innerHTML = `
                 <div class="card-left">
-                    <div class="card-thumb"><img src="/assets/icons/command/quest.png" alt="" class="art-img contain"></div>
+                    <div class="card-thumb"><img src="assets/icons/command/quest.png" alt="" class="art-img contain"></div>
                     <div>
                         <strong class="card-title">${qTitle}</strong>
                         <span class="card-sub">${q.description || 'Active objective'}</span>
@@ -78,8 +78,8 @@ const QuestsModal = {
         document.getElementById('quest-detail-title').textContent = qTitle;
         document.getElementById('quest-detail-desc').textContent = q.description || '';
         document.getElementById('quest-detail-obj').innerHTML = q.progress
-            ? `<img src="/assets/icons/ui/target.webp" alt="" class="ui-ico">Progress: ${q.progress} (${q.status})`
-            : `<img src="/assets/icons/ui/checkmark.png" alt="" class="ui-ico">Status: ${(q.status || 'Active').toUpperCase()}`;
+            ? `<img src="assets/icons/ui/target.webp" alt="" class="ui-ico">Progress: ${q.progress} (${q.status})`
+            : `<img src="assets/icons/ui/checkmark.png" alt="" class="ui-ico">Status: ${(q.status || 'Active').toUpperCase()}`;
 
         // Dynamically fetch rewards from world.json!
         let rewardText = q.reward || 'Armor Gear & Healing Consumables';
@@ -90,6 +90,6 @@ const QuestsModal = {
             }
         }
         document.getElementById('quest-detail-rew').innerHTML =
-            `<img src="/assets/icons/ui/sparkles.webp" alt="" class="ui-ico">${rewardText}`;
+            `<img src="assets/icons/ui/sparkles.webp" alt="" class="ui-ico">${rewardText}`;
     }
 };

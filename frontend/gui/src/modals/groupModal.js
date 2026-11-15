@@ -51,7 +51,7 @@ const GroupModal = {
             li.innerHTML = `
                 <div class="card-left">
                     <div class="card-thumb">
-                        <img src="/assets/icons/ui/crown.webp" alt="Leader" class="art-img contain" style="padding:5px;">
+                        <img src="assets/icons/ui/crown.webp" alt="Leader" class="art-img contain" style="padding:5px;">
                     </div>
                     <div>
                         <strong class="card-title">Active Party: ${grp.name}</strong>
@@ -79,7 +79,7 @@ const GroupModal = {
                 li.innerHTML = `
                     <div class="card-left">
                         <div class="card-thumb">
-                            <img src="/assets/icons/ui/shield.webp" alt="Invite" class="art-img contain" style="padding:5px;">
+                            <img src="assets/icons/ui/shield.webp" alt="Invite" class="art-img contain" style="padding:5px;">
                         </div>
                         <div>
                             <strong class="card-title">Invite to: ${invName}</strong>

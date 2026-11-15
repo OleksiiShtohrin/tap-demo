@@ -92,7 +92,7 @@
 .dock-ctrl-btn {
     width: 26px;
     height: 24px;
-    background: url('/assets/buttons/bg-sq-base.png') no-repeat center / 100% 100%;
+    background: url('../../assets/buttons/bg-sq-base.png') no-repeat center / 100% 100%;
     border: 1px solid rgba(212, 163, 70, 0.45);
     border-radius: 3px;
     color: var(--gold-bright);
@@ -107,7 +107,7 @@
 
 .dock-ctrl-btn:hover,
 .dock-ctrl-btn.active {
-    background-image: url('/assets/buttons/bg-sq-gold.png');
+    background-image: url('../../assets/buttons/bg-sq-gold.png');
     color: #ffffff;
     filter: brightness(1.15);
     box-shadow: 0 0 10px rgba(212, 163, 70, 0.55);

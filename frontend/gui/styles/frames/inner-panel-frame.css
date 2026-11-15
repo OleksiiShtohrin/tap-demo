@@ -22,14 +22,14 @@
 
     background-color: var(--panel-inner) !important;
     background-image:
-        url('/assets/ui/panel-corner-tl.png'),
-        url('/assets/ui/panel-corner-tr.png'),
-        url('/assets/ui/panel-corner-bl.png'),
-        url('/assets/ui/panel-corner-br.png'),
-        url('/assets/ui/slot-edge-h.png'),
-        url('/assets/ui/slot-edge-h.png'),
-        url('/assets/ui/slot-edge-v.png'),
-        url('/assets/ui/slot-edge-v.png') !important;
+        url('../../assets/ui/panel-corner-tl.png'),
+        url('../../assets/ui/panel-corner-tr.png'),
+        url('../../assets/ui/panel-corner-bl.png'),
+        url('../../assets/ui/panel-corner-br.png'),
+        url('../../assets/ui/slot-edge-h.png'),
+        url('../../assets/ui/slot-edge-h.png'),
+        url('../../assets/ui/slot-edge-v.png'),
+        url('../../assets/ui/slot-edge-v.png') !important;
 
     /* `border-box` causes the border to be drawn at the very edge, outside the scrollbar! */
     background-origin: border-box !important;
@@ -64,14 +64,14 @@
     z-index: 15;
 
     background-image:
-        url('/assets/ui/panel-corner-tl.png'),
-        url('/assets/ui/panel-corner-tr.png'),
-        url('/assets/ui/panel-corner-bl.png'),
-        url('/assets/ui/panel-corner-br.png'),
-        url('/assets/ui/slot-edge-h.png'),
-        url('/assets/ui/slot-edge-h.png'),
-        url('/assets/ui/slot-edge-v.png'),
-        url('/assets/ui/slot-edge-v.png');
+        url('../../assets/ui/panel-corner-tl.png'),
+        url('../../assets/ui/panel-corner-tr.png'),
+        url('../../assets/ui/panel-corner-bl.png'),
+        url('../../assets/ui/panel-corner-br.png'),
+        url('../../assets/ui/slot-edge-h.png'),
+        url('../../assets/ui/slot-edge-h.png'),
+        url('../../assets/ui/slot-edge-v.png'),
+        url('../../assets/ui/slot-edge-v.png');
 
     background-position:
         top left, top right, bottom left, bottom right,

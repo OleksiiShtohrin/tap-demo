@@ -39,9 +39,9 @@ const LookModal = {
                     <div class="card-thumb"></div>
                     <div><strong class="card-title">${dir.toUpperCase()}</strong><span class="card-sub">Leads to: ${targetId}</span></div>
                 </div>
-                <img src="/assets/icons/ui/next.png" alt="❯" class="inline-cmd-icon">
+                <img src="assets/icons/ui/next.png" alt="❯" class="inline-cmd-icon">
             `;
-            UI.setArt(li.querySelector('.card-thumb'), tMeta.iconImg || '/assets/icons/ui/compass.webp');
+            UI.setArt(li.querySelector('.card-thumb'), tMeta.iconImg || 'assets/icons/ui/compass.webp');
             lExits.appendChild(li);
         });
 

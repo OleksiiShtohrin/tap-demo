@@ -32,14 +32,14 @@
     overflow: hidden;
     z-index: 1;
 
-    --btn-bg: url('/assets/buttons/bg-base.png');
-    --btn-hover-bg: url('/assets/buttons/bg-gold.png');
-    --btn-edge-h: url('/assets/buttons/edge-h-base.png');
-    --btn-edge-v: url('/assets/buttons/edge-v-base.png');
-    --btn-c-tl: url('/assets/buttons/corner-base-tl.png');
-    --btn-c-tr: url('/assets/buttons/corner-base-tr.png');
-    --btn-c-bl: url('/assets/buttons/corner-base-bl.png');
-    --btn-c-br: url('/assets/buttons/corner-base-br.png');
+    --btn-bg: url('../../assets/buttons/bg-base.png');
+    --btn-hover-bg: url('../../assets/buttons/bg-gold.png');
+    --btn-edge-h: url('../../assets/buttons/edge-h-base.png');
+    --btn-edge-v: url('../../assets/buttons/edge-v-base.png');
+    --btn-c-tl: url('../../assets/buttons/corner-base-tl.png');
+    --btn-c-tr: url('../../assets/buttons/corner-base-tr.png');
+    --btn-c-bl: url('../../assets/buttons/corner-base-bl.png');
+    --btn-c-br: url('../../assets/buttons/corner-base-br.png');
 
     background: transparent !important;
     background-image: var(--btn-bg) !important;
@@ -153,7 +153,7 @@
     padding: 12px;
     font-size: var(--btn-font-connect) !important;
     letter-spacing: 3px;
-    --btn-hover-bg: url('/assets/buttons/bg-blue.png');
+    --btn-hover-bg: url('../../assets/buttons/bg-blue.png');
 }
 
 .btn-gold-sm {
@@ -164,13 +164,13 @@
 /* Active tabs set --btn-bg directly to blue and disable ::before hover flash on tab switch! */
 .window-tabs .tab-btn.active,
 .chat-tabs .chat-tab.active {
-    --btn-bg: url('/assets/buttons/bg-blue.png') !important;
-    --btn-edge-h: url('/assets/buttons/edge-h-blue.png') !important;
-    --btn-edge-v: url('/assets/buttons/edge-v-blue.png') !important;
-    --btn-c-tl: url('/assets/buttons/corner-blue-tl.png') !important;
-    --btn-c-tr: url('/assets/buttons/corner-blue-tr.png') !important;
-    --btn-c-bl: url('/assets/buttons/corner-blue-bl.png') !important;
-    --btn-c-br: url('/assets/buttons/corner-blue-br.png') !important;
+    --btn-bg: url('../../assets/buttons/bg-blue.png') !important;
+    --btn-edge-h: url('../../assets/buttons/edge-h-blue.png') !important;
+    --btn-edge-v: url('../../assets/buttons/edge-v-blue.png') !important;
+    --btn-c-tl: url('../../assets/buttons/corner-blue-tl.png') !important;
+    --btn-c-tr: url('../../assets/buttons/corner-blue-tr.png') !important;
+    --btn-c-bl: url('../../assets/buttons/corner-blue-bl.png') !important;
+    --btn-c-br: url('../../assets/buttons/corner-blue-br.png') !important;
     color: #ffffff !important;
     box-shadow: 0 0 12px rgba(30, 98, 208, 0.55) !important;
 }
@@ -185,16 +185,16 @@
 #btn-drop-selected,
 .btn-attack-mode,
 [data-cmd="GROUP LEAVE"] {
-    --btn-hover-bg: url('/assets/buttons/bg-red.png');
+    --btn-hover-bg: url('../../assets/buttons/bg-red.png');
 }
 
 .right-action-bar .action-btn {
-    --btn-bg: url('/assets/buttons/bg-sq-base.png') !important;
-    --btn-hover-bg: url('/assets/buttons/bg-sq-gold.png');
+    --btn-bg: url('../../assets/buttons/bg-sq-base.png') !important;
+    --btn-hover-bg: url('../../assets/buttons/bg-sq-gold.png');
 }
 
 .right-action-bar .action-btn.active {
-    --btn-bg: url('/assets/buttons/bg-sq-gold.png') !important;
+    --btn-bg: url('../../assets/buttons/bg-sq-gold.png') !important;
 }
 .right-action-bar .action-btn.active::before {
     opacity: 0 !important;
@@ -203,7 +203,7 @@
 
 .right-action-bar .action-btn[data-open-window="attack"],
 .right-action-bar .action-btn[data-open-window="quit"] {
-    --btn-hover-bg: url('/assets/buttons/bg-sq-red.png');
+    --btn-hover-bg: url('../../assets/buttons/bg-sq-red.png');
 }
 
 /* Smoothly fade-in ::before ONLY on hover of non-active tabs/buttons! */
@@ -257,7 +257,7 @@
     position: relative;
     overflow: hidden;
     z-index: 1;
-    background-image: url('/assets/buttons/bg-sq-base.png') !important;
+    background-image: url('../../assets/buttons/bg-sq-base.png') !important;
     background-size: cover !important;
     color: var(--gold-bright) !important;
     display: inline-flex;
@@ -270,7 +270,7 @@
 .close-btn:hover,
 .btn-send:hover,
 .icon-btn:hover {
-    background-image: url('/assets/buttons/bg-sq-gold.png') !important;
+    background-image: url('../../assets/buttons/bg-sq-gold.png') !important;
     filter: brightness(1.15);
     transform: translateY(-1px);
     box-shadow: 0 0 12px rgba(212, 163, 70, 0.55);
@@ -278,7 +278,7 @@
 
 .close-btn:hover,
 .icon-btn[data-open-window="quit"]:hover {
-    background-image: url('/assets/buttons/bg-sq-red.png') !important;
+    background-image: url('../../assets/buttons/bg-sq-red.png') !important;
     box-shadow: 0 0 12px rgba(220, 38, 38, 0.6);
 }
 
@@ -312,11 +312,11 @@
 }
 
 .close-btn::before {
-    background-image: url('/assets/icons/ui/close.png');
+    background-image: url('../../assets/icons/ui/close.png');
 }
 
 .btn-send::before {
-    background-image: url('/assets/icons/ui/next.png');
+    background-image: url('../../assets/icons/ui/next.png');
 }
 
 /* Command & UI Icon Sizes */

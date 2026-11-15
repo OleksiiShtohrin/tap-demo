@@ -69,7 +69,7 @@
     border: none !important;
     border-radius: 4px;
     /* Dark square background texture inside a frame */
-    background: url('/assets/buttons/bg-base.png') no-repeat center / 100% 100% !important;
+    background: url('../../assets/buttons/bg-base.png') no-repeat center / 100% 100% !important;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.9), inset 0 0 18px rgba(0, 0, 0, 0.85) !important;
     overflow: hidden;
 }
@@ -85,14 +85,14 @@
     display: block !important;
 
     background-image:
-        url('/assets/ui/panel-corner-tl.png'),
-        url('/assets/ui/panel-corner-tr.png'),
-        url('/assets/ui/panel-corner-bl.png'),
-        url('/assets/ui/panel-corner-br.png'),
-        url('/assets/ui/slot-edge-h.png'),
-        url('/assets/ui/slot-edge-h.png'),
-        url('/assets/ui/slot-edge-v.png'),
-        url('/assets/ui/slot-edge-v.png');
+        url('../../assets/ui/panel-corner-tl.png'),
+        url('../../assets/ui/panel-corner-tr.png'),
+        url('../../assets/ui/panel-corner-bl.png'),
+        url('../../assets/ui/panel-corner-br.png'),
+        url('../../assets/ui/slot-edge-h.png'),
+        url('../../assets/ui/slot-edge-h.png'),
+        url('../../assets/ui/slot-edge-v.png'),
+        url('../../assets/ui/slot-edge-v.png');
 
     background-position:
         top left, top right, bottom left, bottom right,
@@ -125,7 +125,7 @@
 
 .stage-pin {
     position: relative;
-    background-image: url('/assets/buttons/bg-base.png') !important;
+    background-image: url('../../assets/buttons/bg-base.png') !important;
     background-repeat: no-repeat !important;
     background-position: center center !important;
     background-size: 100% 100% !important;
@@ -145,7 +145,7 @@
 }
 
 .stage-pin:hover {
-    background-image: url('/assets/buttons/bg-gold.png') !important;
+    background-image: url('../../assets/buttons/bg-gold.png') !important;
     color: #fff9db;
     filter: brightness(1.12);
     transform: translateY(-2px);
