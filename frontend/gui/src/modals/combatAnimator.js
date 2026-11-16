@@ -17,56 +17,55 @@ const CombatAnimator = {
         enemies: {
             "dire_wolf": {
                 enabled: true,
-                basePath: "assets/combat/anims/dire_wolf",
-                scale: 1.35,
+                basePath: "/assets/combat/anims/dire_wolf",
+                scale: 1.0,
                 offsetY: 10,
                 states: {
                     idle: {
-                        frames: [1, 2, 3, 4, 5, 6, 7, 8],
-                        fps: 4,
+                        frames: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18],
+                        fps: 10,
                         loop: true
                     },
                     attack: {
-                        frames: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-                        fps: 5,           // 🔧 Швидкість кадрів атаки (10 кадрів при 5 fps = 2000 мс)
-                        loop: false,
-                        impactDelayMs: 650, // 🔧 На якій мілісекунді атаки трясеться герой і вилітає "-HP"
-                        extraHoldMs: 200    // 🔧 Пауза після останнього кадру перед наступним ходом
+                        frames: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18],
+                        fps: 10,                        loop: false,
+                        impactDelayMs: 650,
+                        extraHoldMs: 200
                     },
                     hit: {
-                        frames: [1, 2, 3, 4, 5, 6],
-                        fps: 5,
+                        frames: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18],
+                        fps: 10,
                         loop: false
                     },
                     death: {
-                        frames: [1, 2, 3, 4, 5, 6, 7, 8],
-                        fps: 5,
+                        frames: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18],
+                        fps: 10,
                         loop: false
                     }
                 }
             },
             "smuggler": {
                 enabled: true,
-                basePath: "assets/combat/anims/smuggler",
+                basePath: "/assets/combat/anims/smuggler",
                 scale: 1.2,
                 offsetY: 0,
                 states: {
                     idle:   { frames: [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17], fps: 10,  loop: true },
-                    attack: { frames: [], fps: 10, loop: false, impactDelayMs: 400, extraHoldMs: 200 },
-                    hit:    { frames: [], fps: 10, loop: false },
-                    death:  { frames: [], fps: 8,  loop: false }
+                    attack: { frames: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18], fps: 10, loop: false, impactDelayMs: 400, extraHoldMs: 200 },
+                    hit:    { frames: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18], fps: 10, loop: false },
+                    death:  { frames: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18], fps: 8,  loop: false }
                 }
             },
             "dock_warden": {
-                enabled: false,
-                basePath: "assets/combat/anims/dock_warden",
-                scale: 1.0,
+                enabled: true,
+                basePath: "/assets/combat/anims/dock_warden",
+                scale: 1.2,
                 offsetY: 0,
                 states: {
-                    idle:   { frames: [], fps: 8,  loop: true },
-                    attack: { frames: [], fps: 10, loop: false, impactDelayMs: 400, extraHoldMs: 200 },
-                    hit:    { frames: [], fps: 10, loop: false },
-                    death:  { frames: [], fps: 8,  loop: false }
+                    idle:   { frames: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18], fps: 10,  loop: true },
+                    attack: { frames: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18], fps: 10, loop: false, impactDelayMs: 400, extraHoldMs: 200 },
+                    hit:    { frames: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18], fps: 10, loop: false },
+                    death:  { frames: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18], fps: 8,  loop: false }
                 }
             }
         },
@@ -74,30 +73,30 @@ const CombatAnimator = {
         heroes: {
             "male": {
                 enabled: true,
-                basePath: "assets/combat/anims/hero_male",
+                basePath: "/assets/combat/anims/hero_male",
                 scale: 1.2,
                 offsetY: 0,
                 states: {
                     idle:   { frames: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18], fps: 10,  loop: true },
-                    attack: { frames: [], fps: 10, loop: false, impactDelayMs: 400, extraHoldMs: 200 },
-                    defend: { frames: [], fps: 10, loop: false, extraHoldMs: 200 },
-                    heal:   { frames: [], fps: 10, loop: false, extraHoldMs: 200 },
+                    attack: { frames: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18], fps: 10, loop: false, impactDelayMs: 400, extraHoldMs: 200 },
+                    defend: { frames: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18], fps: 10, loop: false, extraHoldMs: 200 },
+                    heal:   { frames: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18], fps: 10, loop: false, extraHoldMs: 200 },
                     hit:    { frames: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17], fps: 10, loop: false },
-                    death:  { frames: [], fps: 8,  loop: false }
+                    death:  { frames: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18], fps: 8,  loop: false }
                 }
             },
             "female": {
                 enabled: true,
-                basePath: "assets/combat/anims/hero_female",
+                basePath: "/assets/combat/anims/hero_female",
                 scale: 1.2,
                 offsetY: 0,
                 states: {
-                    idle:   { frames: [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18], fps: 10,  loop: true },
-                    attack: { frames: [], fps: 10, loop: false, impactDelayMs: 400, extraHoldMs: 200 },
-                    defend: { frames: [], fps: 10, loop: false, extraHoldMs: 200 },
-                    heal:   { frames: [], fps: 10, loop: false, extraHoldMs: 200 },
-                    hit:    { frames: [], fps: 10, loop: false },
-                    death:  { frames: [], fps: 8,  loop: false }
+                    idle:   { frames: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18], fps: 10,  loop: true },
+                    attack: { frames: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18], fps: 10, loop: false, impactDelayMs: 400, extraHoldMs: 200 },
+                    defend: { frames: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18], fps: 10, loop: false, extraHoldMs: 200 },
+                    heal:   { frames: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18], fps: 10, loop: false, extraHoldMs: 200 },
+                    hit:    { frames: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18], fps: 10, loop: false },
+                    death:  { frames: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18], fps: 8,  loop: false }
                 }
             }
         }
