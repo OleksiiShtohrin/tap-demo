@@ -17,7 +17,7 @@ const CombatAnimator = {
         enemies: {
             "dire_wolf": {
                 enabled: true,
-                basePath: "/assets/combat/anims/dire_wolf",
+                basePath: "assets/combat/anims/dire_wolf",
                 scale: 1.0,
                 offsetY: 10,
                 states: {
@@ -46,7 +46,7 @@ const CombatAnimator = {
             },
             "smuggler": {
                 enabled: true,
-                basePath: "/assets/combat/anims/smuggler",
+                basePath: "assets/combat/anims/smuggler",
                 scale: 1.2,
                 offsetY: 0,
                 states: {
@@ -58,7 +58,7 @@ const CombatAnimator = {
             },
             "dock_warden": {
                 enabled: true,
-                basePath: "/assets/combat/anims/dock_warden",
+                basePath: "assets/combat/anims/dock_warden",
                 scale: 1.2,
                 offsetY: 0,
                 states: {
@@ -73,7 +73,7 @@ const CombatAnimator = {
         heroes: {
             "male": {
                 enabled: true,
-                basePath: "/assets/combat/anims/hero_male",
+                basePath: "assets/combat/anims/hero_male",
                 scale: 1.2,
                 offsetY: 0,
                 states: {
@@ -87,7 +87,7 @@ const CombatAnimator = {
             },
             "female": {
                 enabled: true,
-                basePath: "/assets/combat/anims/hero_female",
+                basePath: "assets/combat/anims/hero_female",
                 scale: 1.2,
                 offsetY: 0,
                 states: {
