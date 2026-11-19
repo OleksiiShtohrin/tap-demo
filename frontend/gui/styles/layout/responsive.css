@@ -16,14 +16,12 @@ body,
     height: 100dvh;
 }
 
-/* Keep Chat & Players panels interactive above Combat Arena when expanded */
-.chat-panel {
-    position: relative;
-    z-index: 46;
-}
-.players-panel {
-    position: relative;
+/* Keep Bottom Dock (Chat & Players) above Combat Arena (40), but below Modals (48) & Flee (60) */
+.bottom-dock {
     z-index: 45;
+}
+.rpg-modal {
+    z-index: 48 !important;
 }
 
 /* ==================== 1. 2K / ULTRAWIDE MONITORS (>= 2050px) ==================== */
@@ -318,31 +316,59 @@ body,
         display: none;
     }
     .hud-left.gold-frame {
+        position: absolute;
+        left: 0;
+        top: 0;
         transform: scale(0.52);
         transform-origin: top left;
     }
     .hud-right.gold-frame {
+        position: absolute;
+        right: 0;
+        top: 0;
         transform: scale(0.52);
         transform-origin: top right;
     }
 
-    /* Turn right action bar into a horizontal scrollable bar right below Top HUD */
+    /* Horizontal scrollable action bar with ornate gold frame */
     .right-action-bar {
         top: 56px;
         bottom: auto;
-        left: 8px;
-        right: 8px;
+        left: 10px;
+        right: 10px;
         width: auto;
-        height: 58px;
+        height: 60px;
         max-height: none;
-        padding: 4px 8px;
-        background: rgba(6, 13, 25, 0.92) !important;
-        border: 1px solid var(--gold-main) !important;
-        border-radius: 6px;
+        padding: 5px 16px;
+        background: linear-gradient(180deg, rgba(7, 15, 28, 0.94), rgba(4, 9, 18, 0.96)) !important;
+        border: none !important;
+        border-radius: 4px;
     }
-    .right-action-bar::before,
-    .right-action-bar::after {
+    .right-action-bar::before {
         display: none;
+    }
+    .right-action-bar::after {
+        display: block;
+        top: -2px;
+        bottom: -2px;
+        left: -6px;
+        right: -6px;
+        background-image:
+            url('/assets/ui/menu-left.png'),
+            url('/assets/ui/menu-right.png'),
+            url('/assets/ui/line-gold.png'),
+            url('/assets/ui/line-gold.png');
+        background-position:
+            left center,
+            right center,
+            top 1px center,
+            bottom 1px center;
+        background-size:
+            24px 64px,
+            24px 64px,
+            calc(100% - 44px) 2px,
+            calc(100% - 44px) 2px;
+        background-repeat: no-repeat;
     }
     .right-menu-scroll {
         flex-direction: row;
@@ -350,6 +376,7 @@ body,
         overflow-y: hidden;
         align-items: center;
         gap: 6px;
+        padding: 2px 4px;
     }
     .action-btn {
         flex: 0 0 64px;
@@ -481,14 +508,20 @@ body,
     .inner-gold-box.flush-portrait {
         height: 180px;
     }
+    .inventory-grid {
+        flex: none;
+        min-height: 172px;
+        max-height: 182px;
+        gap: 8px;
+    }
 
-    /* Compact Combat Arena on mobile portrait so Chat remains accessible */
+    /* Compact Combat Arena on mobile portrait so Chat stays cleanly below or overlays on top */
     .combat-arena {
         top: 6px !important;
         left: 4px !important;
         right: 4px !important;
         bottom: auto !important;
-        height: min(410px, calc(100dvh - 175px)) !important;
+        height: min(355px, calc(100dvh - 255px)) !important;
         padding: 12px 14px 14px 14px;
     }
     .combat-scene {
