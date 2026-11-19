@@ -116,7 +116,7 @@ const UI = {
             if (cmdBtn) {
                 const cmd = cmdBtn.dataset.cmd || '';
                 if (GameState.inCombat && cmd.toUpperCase().startsWith('MOVE ')) {
-                    UI.addChatLine('ROOM', '⚔️ In Combat', 'You cannot leave the room during combat! Use "🏃 Flee" to retreat.', 'chat-err');
+                    UI.addChatLine('COMBAT', '⚔️ In Combat', 'You cannot leave the room during combat! Use "🏃 Flee" to retreat.', 'chat-err');
                     return;
                 }
                 App.sendCommand(cmd);
@@ -203,7 +203,7 @@ const UI = {
     // A versatile helper: it displays an image (img or iconImg), or shows an emoji if none is available!
     setArt(el, imgUrl, fallbackEmoji = '', altText = 'Game illustration') {
         if (!el) return;
-        const src = imgUrl || 'assets/ui/card/look-items.jpeg';
+        const src = imgUrl || 'assets/ui/card/look-items.webp';
 
         if (el.tagName === 'IMG') {
             el.src = src;

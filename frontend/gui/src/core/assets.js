@@ -27,12 +27,12 @@ const ASSETS = {
 
     avatars: {
         male: {
-            img:     "assets/avatars/hero_male.jpeg",
+            img:     "assets/avatars/hero_male.webp",
             iconImg: "assets/avatars/icons/hero_male.jpeg",
             icon:    "🧙‍♂️"
         },
         female: {
-            img:     "assets/avatars/hero_female.jpeg",
+            img:     "assets/avatars/hero_female.webp",
             iconImg: "assets/avatars/icons/hero_female.jpeg",
             icon:    "🧝‍♀️"
         }
@@ -42,70 +42,70 @@ const ASSETS = {
         "harbor_square": {
             icon:    "⚓",
             img:     "assets/rooms/harbor_square.webp",
-            cardImg: "assets/rooms/cards/harbor_square.jpeg",
+            cardImg: "assets/rooms/cards/harbor_square.webp",
             iconImg: "assets/rooms/icons/harbor_square.png",
             region:  "Harbor District · Kingdom of Arvendale"
         },
         "market_street": {
             icon:    "🎪",
             img:     "assets/rooms/market_street.webp",
-            cardImg: "assets/rooms/cards/market_street.jpeg",
+            cardImg: "assets/rooms/cards/market_street.webp",
             iconImg: "assets/rooms/icons/market_street.png",
             region:  "Trade Quarter · Kingdom of Arvendale"
         },
         "blacksmith_forge": {
             icon:    "⚒️",
             img:     "assets/rooms/blacksmith_forge.webp",
-            cardImg: "assets/rooms/cards/blacksmith_forge.jpeg",
+            cardImg: "assets/rooms/cards/blacksmith_forge.webp",
             iconImg: "assets/rooms/icons/blacksmith_forge.png",
             region:  "Artisan Quarter · Kingdom of Arvendale"
         },
         "apothecary": {
             icon:    "⚗️",
             img:     "assets/rooms/apothecary.webp",
-            cardImg: "assets/rooms/cards/apothecary.jpeg",
+            cardImg: "assets/rooms/cards/apothecary.webp",
             iconImg: "assets/rooms/icons/apothecary.png",
             region:  "Alchemist Alley · Kingdom of Arvendale"
         },
         "tavern": {
             icon:    "🍺",
             img:     "assets/rooms/tavern.webp",
-            cardImg: "assets/rooms/cards/tavern.jpeg",
+            cardImg: "assets/rooms/cards/tavern.webp",
             iconImg: "assets/rooms/icons/tavern.png",
             region:  "Harbor District · Kingdom of Arvendale"
         },
         "docks": {
             icon:    "⛵",
             img:     "assets/rooms/docks.webp",
-            cardImg: "assets/rooms/cards/docks.jpeg",
+            cardImg: "assets/rooms/cards/docks.webp",
             iconImg: "assets/rooms/icons/docks.png",
             region:  "The Great Pier · Kingdom of Arvendale"
         },
         "warehouse": {
             icon:    "📦",
             img:     "assets/rooms/warehouse.webp",
-            cardImg: "assets/rooms/cards/warehouse.jpeg",
+            cardImg: "assets/rooms/cards/warehouse.webp",
             iconImg: "assets/rooms/icons/warehouse.png",
             region:  "Outer Docks · Smuggler's Lair"
         },
         "town_gate": {
             icon:    "⛩️",
             img:     "assets/rooms/town_gate.webp",
-            cardImg: "assets/rooms/cards/town_gate.jpeg",
+            cardImg: "assets/rooms/cards/town_gate.webp",
             iconImg: "assets/rooms/icons/town_gate.png",
             region:  "Northern Fortifications"
         },
         "forest_edge": {
             icon:    "🌲",
             img:     "assets/rooms/forest_edge.webp",
-            cardImg: "assets/rooms/cards/forest_edge.jpeg",
+            cardImg: "assets/rooms/cards/forest_edge.webp",
             iconImg: "assets/rooms/icons/forest_edge.png",
             region:  "Whispering Woods"
         },
         "default": {
             icon:    "🏰",
             img:     "assets/rooms/harbor_square.webp",
-            cardImg: "assets/rooms/cards/harbor_square.jpeg",
+            cardImg: "assets/rooms/cards/harbor_square.webp",
             iconImg: "assets/rooms/icons/harbor_square.png",
             region:  "Kingdom of Arvendale"
         }
@@ -200,7 +200,7 @@ const ASSETS = {
         "default": {
             name:    "Item",
             icon:    "🎒",
-            img:     "assets/ui/card/look-items.jpeg",
+            img:     "assets/ui/card/look-items.webp",
             iconImg: "assets/icons/command/inventory.png",
             type:    "common",
             stats:   "Utility",
@@ -209,16 +209,16 @@ const ASSETS = {
     },
 
     npcs: {
-        "captain_eliza": { id: "captain_eliza", icon: "⚔️", img: "assets/avatars/captain_eliza.jpeg", iconImg: "assets/avatars/icons/captain_eliza.jpeg", role: "Harbor Captain" },
-        "town_guide":    { id: "town_guide",    icon: "🗺️", img: "assets/avatars/town_guide.jpeg",    iconImg: "assets/avatars/icons/town_guide.jpeg",    role: "City Guide" },
-        "quest_advisor": { id: "quest_advisor", icon: "🧭", img: "assets/avatars/quest_advisor.jpeg", iconImg: "assets/avatars/icons/quest_advisor.jpeg", role: "Quest Advisor" },
-        "dock_warden":   { id: "dock_warden",   icon: "⚓", img: "assets/avatars/dock_warden.jpeg",   iconImg: "assets/avatars/icons/dock_warden.jpeg",   role: "Harbor Boss" },
-        "blacksmith":    { id: "blacksmith",    icon: "⚒️", img: "assets/avatars/blacksmith.jpeg",    iconImg: "assets/avatars/icons/blacksmith.jpeg",    role: "Royal Blacksmith" },
-        "herbalist":     { id: "herbalist",     icon: "🌿", img: "assets/avatars/herbalist.jpeg",     iconImg: "assets/avatars/icons/herbalist.jpeg",     role: "Apothecary" },
-        "tavern_keeper": { id: "tavern_keeper", icon: "🍺", img: "assets/avatars/tavern_keeper.jpeg", iconImg: "assets/avatars/icons/tavern_keeper.jpeg", role: "Innkeeper" },
-        "smuggler":      { id: "smuggler",      icon: "🗡️", img: "assets/avatars/smuggler.jpeg",      iconImg: "assets/avatars/icons/smuggler.jpeg",      role: "Shadow Smuggler" },
-        "gate_guard":    { id: "gate_guard",    icon: "🛡️", img: "assets/avatars/gate_guard.jpeg",    iconImg: "assets/avatars/icons/gate_guard.jpeg",    role: "North Gate Guard" },
-        "dire_wolf":     { id: "dire_wolf",     icon: "🐺", img: "assets/avatars/dire_wolf.jpeg",     iconImg: "assets/avatars/icons/dire_wolf.jpeg",     role: "Forest Beast" },
-        "default":       { id: "default",       name: "Citizen", icon: "🗣️", img: "assets/ui/card/look-npcs.jpeg", iconImg: "", role: "Townsperson", hostile: false }
+        "captain_eliza": { id: "captain_eliza", icon: "⚔️", img: "assets/avatars/captain_eliza.webp", iconImg: "assets/avatars/icons/captain_eliza.jpeg", role: "Harbor Captain" },
+        "town_guide":    { id: "town_guide",    icon: "🗺️", img: "assets/avatars/town_guide.webp",    iconImg: "assets/avatars/icons/town_guide.jpeg",    role: "City Guide" },
+        "quest_advisor": { id: "quest_advisor", icon: "🧭", img: "assets/avatars/quest_advisor.webp", iconImg: "assets/avatars/icons/quest_advisor.jpeg", role: "Quest Advisor" },
+        "dock_warden":   { id: "dock_warden",   icon: "⚓", img: "assets/avatars/dock_warden.webp",   iconImg: "assets/avatars/icons/dock_warden.jpeg",   role: "Harbor Boss" },
+        "blacksmith":    { id: "blacksmith",    icon: "⚒️", img: "assets/avatars/blacksmith.webp",    iconImg: "assets/avatars/icons/blacksmith.jpeg",    role: "Royal Blacksmith" },
+        "herbalist":     { id: "herbalist",     icon: "🌿", img: "assets/avatars/herbalist.webp",     iconImg: "assets/avatars/icons/herbalist.jpeg",     role: "Apothecary" },
+        "tavern_keeper": { id: "tavern_keeper", icon: "🍺", img: "assets/avatars/tavern_keeper.webp", iconImg: "assets/avatars/icons/tavern_keeper.jpeg", role: "Innkeeper" },
+        "smuggler":      { id: "smuggler",      icon: "🗡️", img: "assets/avatars/smuggler.webp",      iconImg: "assets/avatars/icons/smuggler.jpeg",      role: "Shadow Smuggler" },
+        "gate_guard":    { id: "gate_guard",    icon: "🛡️", img: "assets/avatars/gate_guard.webp",    iconImg: "assets/avatars/icons/gate_guard.jpeg",    role: "North Gate Guard" },
+        "dire_wolf":     { id: "dire_wolf",     icon: "🐺", img: "assets/avatars/dire_wolf.webp",     iconImg: "assets/avatars/icons/dire_wolf.jpeg",     role: "Forest Beast" },
+        "default":       { id: "default",       name: "Citizen", icon: "🗣️", img: "assets/ui/card/look-npcs.webp", iconImg: "", role: "Townsperson", hostile: false }
     }
 };

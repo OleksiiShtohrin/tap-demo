@@ -334,8 +334,8 @@ body,
     .right-action-bar {
         top: 56px;
         bottom: auto;
-        left: 10px;
-        right: 10px;
+        left: 15px;
+        right: 15px;
         width: auto;
         height: 60px;
         max-height: none;
@@ -349,15 +349,15 @@ body,
     }
     .right-action-bar::after {
         display: block;
-        top: -2px;
-        bottom: -2px;
-        left: -6px;
-        right: -6px;
+        top: -1px;
+        bottom: -1px;
+        left: -10px;
+        right: -10px;
         background-image:
-            url('/assets/ui/menu-left.png'),
-            url('/assets/ui/menu-right.png'),
-            url('/assets/ui/line-gold.png'),
-            url('/assets/ui/line-gold.png');
+            url('../../assets/ui/menu-left.png'),
+            url('../../assets/ui/menu-right.png'),
+            url('../../assets/ui/line-gold.png'),
+            url('../../assets/ui/line-gold.png');
         background-position:
             left center,
             right center,
