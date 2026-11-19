@@ -608,7 +608,9 @@ body,
         bottom: auto;
         left: 50%;
         right: auto;
-        width: auto;
+        transform: translateX(-50%);
+        width: fit-content;
+        max-width: calc(100vw - 24px);
         height: 48px;
         max-height: none;
         padding: 3px 16px;
@@ -650,7 +652,7 @@ body,
         gap: 6px;
     }
     .action-btn {
-        flex: 1 0 62px;
+        flex: 0 0 62px;
         height: 38px;
     }
     .right-action-bar .cmd-icon-img {
