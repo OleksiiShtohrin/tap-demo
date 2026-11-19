@@ -7,6 +7,25 @@
     white-space: nowrap;
 }
 
+/* Fix mobile browser address bar cutting off bottom dock (dvh = dynamic viewport height) */
+body,
+#login-screen,
+#game-screen,
+.game-workspace {
+    height: 100vh;
+    height: 100dvh;
+}
+
+/* Keep Chat & Players panels interactive above Combat Arena when expanded */
+.chat-panel {
+    position: relative;
+    z-index: 46;
+}
+.players-panel {
+    position: relative;
+    z-index: 45;
+}
+
 /* ==================== 1. 2K / ULTRAWIDE MONITORS (>= 2050px) ==================== */
 @media (min-width: 2050px) and (min-height: 1050px) {
     .gold-panel {
@@ -345,23 +364,28 @@
     }
 
     .stage-backdrop {
-        padding: 124px 12px 290px 12px;
+        justify-content: flex-start;
+        gap: 6px;
+        padding: 122px 10px 0 10px;
     }
     .stage-banner {
         min-width: 0;
         width: 100%;
-        max-width: 340px;
-        padding: 8px 16px;
+        max-width: 350px;
+        padding: 8px 14px;
     }
     #stage-room-title {
         font-size: 16px;
     }
 
+    /* Stack NPCs cleanly BELOW the location banner so they never overlap */
     .left-npcs-dock {
-        top: 122px;
-        left: 6px;
-        transform: scale(0.75);
+        position: static;
+        align-self: flex-start;
+        transform: scale(0.76);
         transform-origin: top left;
+        margin-top: 2px;
+        gap: 6px;
     }
 
     /* Stack Bottom Dock cleanly without squishing horizontally */
@@ -375,29 +399,42 @@
     .compass-dock {
         order: 1;
         width: 100%;
-        height: 112px;
+        height: 128px;
         bottom: 0;
+        z-index: 25;
+        justify-content: center;
         pointer-events: none;
     }
     .compass-rose-wrap {
         transform: scale(0.5);
-        transform-origin: center bottom;
+        transform-origin: center center;
         pointer-events: auto;
+    }
+    .chat-tabs {
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+    .chat-tab {
+        font-size: 11px !important;
+        padding: 4px 7px !important;
+    }
+    .dock-window-controls {
+        flex-shrink: 0;
     }
     .chat-panel {
         order: 2;
         flex: 1 1 100%;
-        height: 155px;
-        padding: 10px 16px 12px 16px;
+        height: 150px;
+        padding: 10px 14px 12px 14px;
     }
     .chat-panel.chat-tall {
-        height: 215px;
+        height: 205px;
     }
     .players-panel {
         order: 3;
         flex: 1 1 100%;
-        height: 120px;
-        padding: 10px 16px 12px 16px;
+        height: 115px;
+        padding: 10px 14px 12px 14px;
     }
 
     /* Stack 2-column modals into 1 scrollable column */
@@ -445,26 +482,27 @@
         height: 180px;
     }
 
-    /* Combat Arena mobile layout */
+    /* Compact Combat Arena on mobile portrait so Chat remains accessible */
     .combat-arena {
         top: 6px !important;
         left: 4px !important;
         right: 4px !important;
-        bottom: 166px !important;
+        bottom: auto !important;
+        height: min(410px, calc(100dvh - 175px)) !important;
         padding: 12px 14px 14px 14px;
     }
     .combat-scene {
         padding: 10px 10px;
     }
     .combat-top-bar {
-        height: 64px;
+        height: 74px;
     }
     .combat-fighter-hud.fighter-left  { transform: scale(0.46); }
-    .combat-turn-banner               { transform: translateX(-50%) scale(0.5); top: 48px; }
+    .combat-turn-banner               { transform: translateX(-50%) scale(0.5); top: 44px; }
     .combat-fighter-hud.fighter-right { transform: scale(0.46); }
     .fighter-spot {
-        width: 46vw;
-        max-height: 36vh;
+        width: 45vw;
+        max-height: 23vh;
     }
     .combat-outcome {
         width: 88vw;
